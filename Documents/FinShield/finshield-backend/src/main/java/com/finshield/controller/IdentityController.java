@@ -2,8 +2,7 @@ package com.finshield.controller;
 
 import com.finshield.model.*;
 import com.finshield.service.IdentityService;
-
-import main.java.com.finshield.model.Alert;
+import com.finshield.model.Alert;
 
 import org.springframework.web.bind.annotation.*;
 
