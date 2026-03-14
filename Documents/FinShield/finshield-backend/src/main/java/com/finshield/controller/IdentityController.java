@@ -33,21 +33,22 @@ public class IdentityController {
     @GetMapping("/graph")
     public List<IdentityEvent> getGraph(@RequestParam String pan) {
         return service.getEvents(pan);
+    }
 
-        @GetMapping("/")
-public String home() {
-    return """
-    FinShield Backend API
+    @GetMapping("/")
+    public String home() {
+        return """
+            FinShield Backend API
 
-    Available Endpoints:
+            Available Endpoints:
 
-    /identity/events
-    /identity/risk
-    /identity/alerts
+            /identity/events
+            /identity/risk
+            /identity/alerts
+            /identity/graph
 
-    Swagger Docs:
-    /swagger-ui/index.html
-    """;
-}
+            Swagger Docs:
+            /swagger-ui/index.html
+            """;
     }
 }
