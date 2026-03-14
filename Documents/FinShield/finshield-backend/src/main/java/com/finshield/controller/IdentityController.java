@@ -29,10 +29,10 @@ public class IdentityController {
     @GetMapping("/alerts")
     public List<Alert> getAlerts(@RequestParam String pan) {
         return service.generateAlerts(pan);
+    }
 
     @GetMapping("/graph")
-public List<IdentityEvent> getGraph(@RequestParam String pan){
-    return service.getEvents(pan);
-}
+    public List<IdentityEvent> getGraph(@RequestParam String pan) {
+        return service.getEvents(pan);
     }
 }
